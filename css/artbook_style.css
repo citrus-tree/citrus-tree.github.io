@@ -7,13 +7,31 @@
   border-style: solid;
   border-radius: 2px;
   border-width: 1px;
-  margin-top: 200px;
+  margin-top: 215px;
   margin-left: 5px;
   margin-right: 5px;
   margin-bottom: 15px;
   padding-top: 5px;
-  max-width: 200px;
-  max-height: 215px;
+  width: 200px;
+  height: 80px;
+}
+
+.art_big {
+  background: linear-gradient(180deg, var(--pl_blue) 0%, var(--pl_magenta) 100%);
+  box-shadow: 0px 3px 6px transparent;
+
+  display: inline-block;
+  border-color: var(--pl_yellow);
+  border-style: solid;
+  border-radius: 2px;
+  border-width: 1px;
+  margin-top: 300px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 15px;
+  padding-top: 5px;
+  width: 420px;
+  height: 80px;
 }
 
 .art:hover {
@@ -43,6 +61,20 @@
   margin-right: auto;
   max-width: 280px;
   max-height: 280px;
+
+  align-self: center;
+}
+
+.art_image_big {
+  /* background-color: red; */
+
+  display: block;
+  margin-top: -417px;
+  margin-bottom: 0px;
+  margin-left: -55px;
+  margin-right: auto;
+  max-width: 512px;
+  max-height: 512px;
 
   align-self: center;
 }
