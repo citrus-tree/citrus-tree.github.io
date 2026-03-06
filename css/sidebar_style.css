@@ -1,60 +1,14 @@
-:root {
-  --pl_magenta: #ff71ce;
-  --pl_blue: #01cdfe;
-  --pl_green: #05ffa1;
-  --pl_purple: #01cdfe;
-  --pl_yellow: #fffb96;
-  --pl_white: #ffffff;
-}  
-  
-body {
-  background-image: url("tiled_pavement.png");
-  background-repeat: repeat;
-
-  margin: 0;
-}
-
-a {
-  color: var(--pl_magenta);
-}
-
-.container {
-  /* background-color: white; */
-
-  display: flex;
-  margin-top: 128px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 600px;
-  height: 800px;
-}
-
 .sidebar {
   /* background-color: #8df0cb; */
   background: linear-gradient(180deg, rgba(141, 240, 203, 255) 0%, rgba(141, 240, 203, 255) 80%, rgba(255, 255, 255, 0) 100%);
   /* background: linear-gradient(180deg, rgba(255, 255, 255, 255) 0%, rgba(255, 255, 255, 255) 50%, rgba(255, 255, 255, 0) 100%); */
 
   border-radius: 2px;
+  margin-top: 55px;
   width: 150px;
   height: 550px;
 
   position: fixed;
-}
-
-.main {
-  /* background-color: green; */
-
-  margin-left: 150px;
-  padding-bottom: 150px;
-  width: 450px;
-  height: fit-content;
-}
-
-.page_header {
-  display: block;
-  margin: 5px;
-
-  text-align: center;
 }
 
 .header {
@@ -161,50 +115,4 @@ a {
   filter: invert();
 
   transition: filter 0.2s ease-in-out;
-}
-
-.entry {
-  background-color: var(--pl_white);
-
-  display: block;
-  border-style: solid;
-  border-radius: 3px;
-  border-width: 1px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 15px;
-}
-
-.entry_header {
-  /* background-color: green; */
-
-  display: block;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 10px;
-  margin-right: 10px;
-
-  text-align: right;
-}
-
-.entry_image {
-  /* background-color: red; */
-
-  display: block;
-  border-style: solid;
-  border-width: 1px;
-  margin: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 350px;
-  max-height: 200px;
-
-  align-self: center;
-}
-
-.entry_text {
-  /* background-color: red; */
-
-  display: block;
-  margin: 10px;
 }

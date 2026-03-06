@@ -1,63 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<head>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog_style.css">
+    <link rel="stylesheet" href="css/sidebar_style.css">
+    <title>ℭ𝔦𝔱𝔯𝔲𝔰 🍊</title>
+    
+    <script src="js/citrus_lib.js"></script>
+  </head>
 
-<body>
-  <div class="container">
+  <body>
+    <div class="container">
 
-    <div class="sidebar">
-      <div class="header">
-        <img class="pfp" src="me.png" alt="Fey Valentine from the show Cowboy Bebop.">
-        <h1 class="header_text"> ℭ𝔦𝔱𝔯𝔲𝔰 </h1>
-        <p class="header_text"> Jaina </p>
-        <p class="header_text"> she/her </p>
-        <p class="header_text">--~===❤️===~--</p>
+      <div class="sidebar">
+        <div include="sidebar_header.shtml"></div>
+        <a class="sidebar_link" href="index.html">[home]</a>
+        <a class="sidebar_link" href="about.html">[about me]</a>
+        <a class="sidebar_link_current" href="publications.html">[publications]</a>
+        <a class="sidebar_link" href="portfolio.html">[software dev]</a>
+        <a class="sidebar_link" href="artbook.html">[artbook]</a>
+        <div include="sidebar_footer.shtml"></div>
       </div>
-      <a class="sidebar_link" href="index.html">[home]</a>
-      <a class="sidebar_link" href="portfolio.html">[portfolio]</a>
-      <a class="sidebar_link_current" href="publications.html">[publications]</a>
-      <div class="sidebar_link_icon_set">
-        <a href="https://github.com/citrus-tree">
-          <img class="sidebar_link_icon" src="github_logo.png" alt="Github logo.">
-        </a>
-        <a href="https://orcid.org/0009-0006-2999-9999">
-          <img class="sidebar_link_icon" src="orcid_logo.png" alt="ORCiD logo.">
-        </a>
+
+      <div class="main">
+        <h1 class="page_header">𝖕𝖚𝖇𝖑𝖎𝖈𝖆𝖙𝖎𝖔𝖓𝖘</h1>
+
+        <div class="entry">
+          <h2 class="entry_header">Encoding Occupancy in Memory Location for Efficient and Compact High-Resolution Voxel Structures</h2>
+          <img class="entry_image" src="/img/encoding_occupancy_teaser.jpg" alt="A tree diagram. Each node shows a small group of voxels and a memory address. Beside it is a colorful render of the castle from the Epic Citadel scene.">
+          <p class="entry_header"><i>Jaina Modisett, <a href="http://newq.net/">Markus Billeter</a></i></p>
+          <p class="entry_header"><i>21 November 2025</i></p>
+          <p class="entry_header"><i>doi: <a href="https://doi.org/10.1111/cgf.70292">10.1111/cgf.70292</a></i></p>
+          <div id="encoding_occupancy_content" class="entry_contents">
+            <p class="entry_text">
+              <b>Abstract:</b> Compressed voxel structures make it possible to store, interact with and display detailed and complex geometry. The Sparse Voxel DAG (directed acyclic graph) is such a compressed representation that supports real-time rendering and interactive editing of high-resolution voxel geometry. We present a novel encoding of the Sparse Voxel DAG that utilises the memory location of data to encode information about the structure of the voxel geometry. This encoding is not only more compact but also makes it possible to avoid memory accesses. In turn, this improves traversal performance, which we can observe in terms of increased ray tracing speed. Our new encoding retains compatibility with other existing methods. We demonstrate an adaption to the HashDAG data structure and show that our proposed encoding also results in better editing speed at similar memory requirements in this framework. Further, we demonstrate its compatibility with existing methods for storing voxel attributes such as colours.
+            </p>
+          </div>
+          <button id="encoding_occupancy_button" onclick='expand_blog_post("encoding_occupancy_button", "encoding_occupancy_content")' class="entry_expand_button">show more</button>
+        </div>
+        
+        <div class="entry">
+          <h2 class="entry_header">Tracking and Control of Multiple Objects During Nonprehensile Manipulation in Clutter</h2>
+          <img class="entry_image" src="/img/tracking_and_control_teaser.gif" alt="A tree diagram. Each node shows a small group of voxels and a memory address. Beside it is a colorful render of the castle from the Epic Citadel scene.">
+          <p class="entry_header"><i>Zisong Xu, <a href="https://rpapallas.com/">Rafael Papallas</a>, Jaina Modisett, <a href="http://newq.net/">Markus Billeter</a>, Mehmet R. Dogar</i></p>
+          <p class="entry_header"><i>6 June 2025</i></p>
+          <p class="entry_header"><i>doi: <a href="https://doi.org/10.1109/tro.2025.3577437">10.1109/TRO.2025.3577437</a></i></p>
+          <div id="tracking_and_control_content" class="entry_contents">
+            <p class="entry_text">
+              <b>Abstract:</b> This article introduces a method for 6-D pose tracking and control of multiple objects during nonprehensile manipulation by a robot. The tracking system estimates objects’ poses by integrating physics predictions, derived from robotic joint state information, with visual inputs from an RGB-D camera. Specifically, the methodology is based on particle filtering, which fuses control information from the robot as an input for each particle movement and with real-time camera observations to track the pose of objects. Comparative analyses reveal that this physics-based approach substantially improves pose tracking accuracy over baseline methods that rely solely on visual data, particularly during manipulation in clutter, where occlusions are a frequent problem. The tracking system is integrated with a model predictive control approach which shows that the probabilistic nature of our tracking system can help robust manipulation planning and control of multiple objects in clutter, even under heavy occlusions.
+            </p>
+          </div>
+          <button id="tracking_and_control_button" onclick='expand_blog_post("tracking_and_control_button", "tracking_and_control_content")' class="entry_expand_button">show more</button>
+        </div>
       </div>
     </div>
 
-    <div class="main">
-      <h1 class="page_header">𝖕𝖚𝖇𝖑𝖎𝖈𝖆𝖙𝖎𝖔𝖓𝖘</h1>
-
-      <div class="entry">
-        <h2 class="entry_header">Encoding Occupancy in Memory Location for Efficient and Compact High-Resolution Voxel Structures</h2>
-        <img class="entry_image" src="encoding_occupancy_teaser.jpg" alt="A tree diagram. Each node shows a small group of voxels and a memory address. Beside it is a colorful render of the castle from the Epic Citadel scene.">
-        <p class="entry_header"><i>Jaina Modisett, <a href="http://newq.net/">Markus Billeter</a></i></p>
-        <p class="entry_header"><i>21 November 2025</i></p>
-        <p class="entry_header"><i>doi: <a href="https://doi.org/10.1111/cgf.70292">10.1111/cgf.70292</a></i></p>
-        <p class="entry_text">
-          <b>Abstract:</b> Compressed voxel structures make it possible to store, interact with and display detailed and complex geometry. The Sparse Voxel DAG (directed acyclic graph) is such a compressed representation that supports real-time rendering and interactive editing of high-resolution voxel geometry. We present a novel encoding of the Sparse Voxel DAG that utilises the memory location of data to encode information about the structure of the voxel geometry. This encoding is not only more compact but also makes it possible to avoid memory accesses. In turn, this improves traversal performance, which we can observe in terms of increased ray tracing speed. Our new encoding retains compatibility with other existing methods. We demonstrate an adaption to the HashDAG data structure and show that our proposed encoding also results in better editing speed at similar memory requirements in this framework. Further, we demonstrate its compatibility with existing methods for storing voxel attributes such as colours.
-        </p>
-      </div>
-      
-      <div class="entry">
-        <h2 class="entry_header">Tracking and Control of Multiple Objects During Nonprehensile Manipulation in Clutter</h2>
-        <img class="entry_image" src="tracking_and_control_teaser.gif" alt="A tree diagram. Each node shows a small group of voxels and a memory address. Beside it is a colorful render of the castle from the Epic Citadel scene.">
-        <p class="entry_header"><i>Zisong Xu, <a href="https://rpapallas.com/">Rafael Papallas</a>, Jaina Modisett, <a href="http://newq.net/">Markus Billeter</a>, Mehmet R. Dogar</i></p>
-        <p class="entry_header"><i>6 June 2025</i></p>
-        <p class="entry_header"><i>doi: <a href="https://doi.org/10.1109/tro.2025.3577437">10.1109/TRO.2025.3577437</a></i></p>
-        <p class="entry_text">
-          <b>Abstract:</b> This article introduces a method for 6-D pose tracking and control of multiple objects during nonprehensile manipulation by a robot. The tracking system estimates objects’ poses by integrating physics predictions, derived from robotic joint state information, with visual inputs from an RGB-D camera. Specifically, the methodology is based on particle filtering, which fuses control information from the robot as an input for each particle movement and with real-time camera observations to track the pose of objects. Comparative analyses reveal that this physics-based approach substantially improves pose tracking accuracy over baseline methods that rely solely on visual data, particularly during manipulation in clutter, where occlusions are a frequent problem. The tracking system is integrated with a model predictive control approach which shows that the probabilistic nature of our tracking system can help robust manipulation planning and control of multiple objects in clutter, even under heavy occlusions.
-        </p>
-      </div>
-
-      <div style="display:block; height:600;"> </div>
-    </div>
-  </div>
-
-</body>
+    <script>
+      on_page_load();
+    </script> 
+  </body>
 
 </html>

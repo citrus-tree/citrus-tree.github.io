@@ -1,0 +1,47 @@
+:root {
+  --pl_magenta: #ff71ce;
+  --pl_blue: #01cdfe;
+  --pl_green: #05ffa1;
+  --pl_purple: #01cdfe;
+  --pl_yellow: #fffb96;
+  --pl_white: #ffffff;
+}  
+  
+body {
+  background-image: url("/img/tiled_pavement.png");
+  background-repeat: repeat;
+
+  margin: 0;
+}
+
+a {
+  color: var(--pl_magenta);
+}
+
+.container {
+  /* background-color: white; */
+
+  display: flex;
+  margin-top: 128px;
+  margin-bottom: 128px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  height: 100%;
+}
+
+.main {
+  /* background-color: green; */
+
+  margin-left: 150px;
+  padding-bottom: 150px;
+  width: 450px;
+  height: 100%;
+}
+
+.page_header {
+  display: block;
+  margin: 5px;
+
+  text-align: center;
+}

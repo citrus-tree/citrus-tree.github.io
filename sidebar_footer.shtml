@@ -1,0 +1,8 @@
+<div class="sidebar_link_icon_set">
+  <a href="https://github.com/citrus-tree">
+    <img class="sidebar_link_icon" src="/img/github_logo.png" alt="Github logo.">
+  </a>
+  <a href="https://orcid.org/0009-0006-2999-9999">
+    <img class="sidebar_link_icon" src="/img/orcid_logo.png" alt="ORCiD logo.">
+  </a>
+</div>
