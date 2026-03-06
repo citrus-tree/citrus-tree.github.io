@@ -1,0 +1,53 @@
+.art {
+  background: linear-gradient(180deg, var(--pl_blue) 0%, var(--pl_magenta) 100%);
+  box-shadow: 0px 3px 6px transparent;
+
+  display: inline-block;
+  border-color: var(--pl_yellow);
+  border-style: solid;
+  border-radius: 2px;
+  border-width: 1px;
+  margin-top: 200px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 15px;
+  padding-top: 5px;
+  max-width: 200px;
+  max-height: 215px;
+}
+
+.art:hover {
+  box-shadow: 0px 3px 6px var(--pl_yellow);
+}
+
+.art_title {
+  color: var(--pl_white);
+  text-shadow: 1px 1px 1px black;
+  
+  display: block;
+  margin-top: -50px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  text-align: center;
+}
+
+.art_image {
+  /* background-color: red; */
+
+  display: block;
+  margin-top: -185px;
+  margin-bottom: 0px;
+  margin-left: -40px;
+  margin-right: auto;
+  max-width: 280px;
+  max-height: 280px;
+
+  align-self: center;
+}
+
+.art_text {
+  display: block;
+  margin: 10px;
+}

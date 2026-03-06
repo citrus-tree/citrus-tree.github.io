@@ -30,12 +30,33 @@ a {
   height: 100%;
 }
 
+.container_wide {
+  /* background-color: white; */
+
+  display: flex;
+  margin-top: 128px;
+  margin-bottom: 128px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 850px;
+  height: 100%;
+}
+
 .main {
   /* background-color: green; */
 
   margin-left: 150px;
   padding-bottom: 150px;
   width: 450px;
+  height: 100%;
+}
+
+.main_wide {
+  /* background-color: green; */
+
+  margin-left: 150px;
+  padding-bottom: 150px;
+  width: 700px;
   height: 100%;
 }
 
