@@ -102,3 +102,9 @@
   display: block;
   margin: 10px;
 }
+
+@media (orientation: portrait) and (pointer: none) {
+  .entry_text {
+    font-size: 1.85vh;
+  }
+}

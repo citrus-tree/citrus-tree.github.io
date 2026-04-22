@@ -39,6 +39,12 @@
   margin-bottom: 2px;
 }
 
+@media (orientation: portrait) and (pointer: none) {
+  .header_text {
+    font-size: 1.85vh;
+  }
+}
+
 .sidebar_link_current {
   background-color: var(--pl_blue);
 
@@ -55,6 +61,12 @@
   line-height: 24px;
 }
 
+@media (orientation: portrait) and (pointer: none) {
+  .sidebar_link_current {
+    font-size: 1.85vh;
+  }
+}
+
 .sidebar_link {
   display: block;
   margin-top: 5px;
@@ -68,6 +80,12 @@
 
   transition: color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
+}
+
+@media (orientation: portrait) and (pointer: none) {
+  .sidebar_link {
+    font-size: 1.85vh;
+  }
 }
 
 .sidebar_link:hover {
