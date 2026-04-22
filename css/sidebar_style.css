@@ -11,6 +11,12 @@
   position: fixed;
 }
 
+@media (width < 850px) {
+  .sidebar {
+    visibility: hidden;
+  }
+}
+
 .header {
   display: block;
   margin-left: auto; 

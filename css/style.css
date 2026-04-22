@@ -30,6 +30,20 @@ a {
   height: 100%;
 }
 
+@media (width < 850px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (orientation: portrait) and (pointer: none) {
+  .container {
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+
 .container_wide {
   /* background-color: white; */
 
@@ -42,6 +56,20 @@ a {
   height: 100%;
 }
 
+@media (width < 850px) {
+  .container_wide {
+    width: 100%;
+  }
+}
+
+@media (orientation: portrait) and (pointer: none) {
+  .container_wide {
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+
 .main {
   /* background-color: green; */
 
@@ -51,6 +79,21 @@ a {
   height: 100%;
 }
 
+@media (width < 850px) {
+  .main {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (orientation: portrait) and (pointer: none) {
+  .main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+}
+
 .main_wide {
   /* background-color: green; */
 
@@ -58,6 +101,21 @@ a {
   padding-bottom: 150px;
   width: 700px;
   height: 100%;
+}
+
+@media (width < 850px) {
+  .main_wide {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (orientation: portrait) and (pointer: none) {
+  .main_wide {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
 }
 
 .page_header {
