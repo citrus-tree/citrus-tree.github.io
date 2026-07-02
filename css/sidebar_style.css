@@ -1,7 +1,8 @@
 .sidebar {
   /* background-color: #8df0cb; */
-  background: linear-gradient(180deg, rgba(255, 113, 206, 255) 0%, rgba(141, 240, 203, 255) 80%, rgba(255, 255, 255, 0) 100%);
+  /* background: linear-gradient(180deg, rgba(255, 113, 206, 255) 0%, rgba(141, 240, 203, 255) 80%, rgba(255, 255, 255, 0) 100%); */
   /* background: linear-gradient(180deg, rgba(255, 255, 255, 255) 0%, rgba(255, 255, 255, 255) 50%, rgba(255, 255, 255, 0) 100%); */
+  background-image: url("/img/sidebar_background2.png");
 
   border-radius: 2px;
   margin-top: 55px;
@@ -14,6 +15,7 @@
 .vertical_sidebar {
   /* background-color: rgba(141, 240, 203, 255); */
   background: linear-gradient(180deg, rgba(255, 113, 206, 255) 0%, rgba(141, 240, 203, 255) 100%);
+  /* background-image: url("/img/sidebar_background.png"); */
 
   border-color: black;
   border-width: 1px;
@@ -71,13 +73,15 @@
 }
 
 .sidebar_link_current {
-  background-color: var(--pl_blue);
+  background-color: var(--pl_lineart_blue);
+
+  border-radius: 3px;
 
   display: block;
   margin-top: 5px; 
   margin-bottom: 5px; 
-  margin-left: auto; 
-  margin-right: auto;
+  margin-left: 12px;
+  margin-right: 12px;
   height: 24px;
 
   color: white;
@@ -93,12 +97,16 @@
 }
 
 .sidebar_link {
+  border-radius: 3px;
+
   display: block;
   margin-top: 5px;
   margin-bottom: 5px; 
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 12px;
+  margin-right: 12px;
   height: 24px;
+
+  color: black;
 
   text-align: center;
   line-height: 24px;
@@ -123,13 +131,15 @@
 }
 
 .sidebar_link:hover {
-  background-color: var(--pl_magenta);
+  background-color: var(--pl_lineart_green);
+
+  border-radius: 3px;
 
   /* display: block; */
   margin-top: 5px;
   margin-bottom: 5px; 
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 12px;
+  margin-right: 12px;
   height: 24px;
 
   color: white;

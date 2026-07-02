@@ -1,4 +1,7 @@
 .entry {
+  /* background-image: url("/img/eggshell_dots.png"); */
+  /* background-repeat: repeat; */
+
   background-color: var(--pl_white);
 
   display: block;

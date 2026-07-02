@@ -5,10 +5,14 @@
   --pl_purple: #01cdfe;
   --pl_yellow: #fffb96;
   --pl_white: #ffffff;
+
+  --pl_lineart_red: #fa6982;
+  --pl_lineart_green: #96f06e;
+  --pl_lineart_blue: #6ec8fa;
 }  
   
 body {
-  background-image: url("/img/tiled_pavement.png");
+  background-image: url("/img/hedge_pink.png");
   background-repeat: repeat;
 
   margin: 0;
