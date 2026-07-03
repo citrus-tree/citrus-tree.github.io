@@ -1,50 +1,115 @@
-.art {
-  background: linear-gradient(180deg, var(--pl_blue) 0%, var(--pl_magenta) 100%);
-  box-shadow: 0px 3px 6px transparent;
+.art_red {
+  background-image: url("/img/polaroid_frame_small_red.png");
+  box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 35%);
 
   display: inline-block;
-  border-color: var(--pl_yellow);
-  border-style: solid;
-  border-radius: 2px;
-  border-width: 1px;
-  margin-top: 215px;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom: 15px;
-  padding-top: 5px;
-  width: 200px;
-  height: 80px;
+  width: 175px;
+  height: 210px;
+
+  margin: 10px;
+
+  rotate: 2.0deg;
+
+  transition: scale 0.1s ease-in-out;
 }
 
-.art_big {
-  background: linear-gradient(180deg, var(--pl_blue) 0%, var(--pl_magenta) 100%);
-  box-shadow: 0px 3px 6px transparent;
+.art_red:hover {
+  box-shadow: 0px 0px 6px var(--pl_lineart_green);
+  
+  position: relative;
+  z-index: 1000;
+
+  scale: 150%;
+  rotate: 0.0deg;
+  
+  transition: scale 0.1s ease-in-out
+    , rotate 0.1s ease-in-out;
+
+  /* IE, only works on <img> tags */
+  -ms-interpolation-mode: nearest-neighbor;
+  /* Firefox */
+  image-rendering: crisp-edges;
+  /* Chromium + Safari */
+  image-rendering: pixelated;
+}
+
+.art_green {
+  background-image: url("/img/polaroid_frame_small_green.png");
+  box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 35%);
 
   display: inline-block;
-  border-color: var(--pl_yellow);
-  border-style: solid;
-  border-radius: 2px;
-  border-width: 1px;
-  margin-top: 300px;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom: 15px;
-  padding-top: 5px;
-  width: 420px;
-  height: 80px;
+  width: 175px;
+  height: 210px;
+
+  margin: 10px;
+
+  rotate: 0.9deg;
+
+  transition: scale 0.1s ease-in-out;
 }
 
-.art:hover {
-  box-shadow: 0px 3px 6px var(--pl_yellow);
+.art_green:hover {
+  box-shadow: 0px 0px 6px var(--pl_lineart_green);
+  
+  position: relative;
+  z-index: 1000;
+
+  scale: 150%;
+  rotate: 0.0deg;
+  
+  transition: scale 0.1s ease-in-out
+    , rotate 0.1s ease-in-out;
+
+  /* IE, only works on <img> tags */
+  -ms-interpolation-mode: nearest-neighbor;
+  /* Firefox */
+  image-rendering: crisp-edges;
+  /* Chromium + Safari */
+  image-rendering: pixelated;
+}
+
+.art_blue {
+  background-image: url("/img/polaroid_frame_small_blue.png");
+  box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 35%);
+
+  display: inline-block;
+  width: 175px;
+  height: 210px;
+
+  margin: 10px;
+
+  rotate: -1.2deg;
+
+  transition: scale 0.1s ease-in-out;
+}
+
+.art_blue:hover {
+  box-shadow: 0px 0px 6px var(--pl_lineart_green);
+  
+  position: relative;
+  z-index: 1000;
+
+  scale: 150%;
+  rotate: 0.0deg;
+  
+  transition: scale 0.1s ease-in-out
+    , rotate 0.1s ease-in-out;
+
+  /* IE, only works on <img> tags */
+  -ms-interpolation-mode: nearest-neighbor;
+  /* Firefox */
+  image-rendering: crisp-edges;
+  /* Chromium + Safari */
+  image-rendering: pixelated;
 }
 
 .art_title {
-  color: var(--pl_white);
-  text-shadow: 1px 1px 1px black;
+  color: black;
+  font-family: sans-serif;
   
   display: block;
-  margin-top: -50px;
-  margin-bottom: 10px;
+  margin-top: 7px;
+  margin-bottom: auto;
   margin-left: 10px;
   margin-right: 10px;
 
@@ -52,31 +117,12 @@
 }
 
 .art_image {
-  /* background-color: red; */
-
   display: block;
-  margin-top: -185px;
-  margin-bottom: 0px;
-  margin-left: -40px;
-  margin-right: auto;
-  max-width: 280px;
-  max-height: 280px;
-
-  align-self: center;
-}
-
-.art_image_big {
-  /* background-color: red; */
-
-  display: block;
-  margin-top: -417px;
-  margin-bottom: 0px;
-  margin-left: -55px;
-  margin-right: auto;
-  max-width: 512px;
-  max-height: 512px;
-
-  align-self: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  max-width: 155px;
+  max-height: 155px;
 }
 
 .art_text {

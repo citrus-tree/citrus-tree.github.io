@@ -1,12 +1,12 @@
 .entry {
-  /* background-image: url("/img/eggshell_dots.png"); */
-  /* background-repeat: repeat; */
+  background-image: url("/img/eggshell_dots.png");
+  background-repeat: repeat;
 
   background-color: var(--pl_white);
 
   display: block;
   border-style: solid;
-  border-radius: 3px;
+  border-radius: 2px;
   border-width: 1px;
   margin-left: 10px;
   margin-right: 10px;
